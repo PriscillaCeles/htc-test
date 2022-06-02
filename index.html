@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <script type="text/javascript" src="./src/script/index.js" defer></script>
+  <title> HTC Test | Formulário </title>
+</head>
+
+<body>
+  <form class="form">
+    <h1 class="form__title">Faça seu cadastro</h1>
+    <section class="form__informations">
+      <div class="form__informations--wrap">
+        <div class="form__information">
+          <label class="form__information--label" for="name">Nome completo</label>
+          <input type="text" class="form__information--input name" id="name" placeholder="Digite seu nome completo"
+            required />
+        </div>
+        <div class="form__information--error form__information--error-name">
+          <span class="form__information--error-text">Este campo não está válido</span>
+        </div>
+      </div>
+      <div class="form__informations--wrap">
+        <div class="form__information">
+          <label class="form__information--label" for="email">E-mail</label>
+          <input type="text" class="form__information--input email" id="email" placeholder="Digite seu e-mail" required />
+        </div>
+        <div class="form__information--error form__information--error-email">
+          <span class="form__information--error-text">Inclua um edereço de email valido. Está faltando um "@".</span>
+        </div>
+      </div>
+      <div class="form__informations--wrap">
+        <div class="form__information">
+          <label class="form__information--label" for="password">Senha</label>
+          <div class="form__information--password">
+            <input type="password" class="form__information--password-input password" id="password" placeholder="Crie uma senha"
+              data-tipo="senha" required />
+            <button type="button" class="form__information--password-button password-visibility"  title="Botão para revelar a senhar"></button>
+          </div>
+        </div>
+        <div class="form__information--error form__information--error-password">
+          <span class="form__information--error-text">Este campo não está válido</span>
+        </div>
+      </div>
+      <div class="form__informations--wrap">
+        <div class="form__information">
+          <label class="form__information--label" for="password-confirmation">Confirmar Senha</label>
+          <div class="form__information--password form__information--password-confirmation">
+            <input type="password" class="form__information--password-input password-confirmation"  id="password-confirmation" placeholder="Confirme sua senha"
+              data-tipo="senha" required />
+            <button type="button" class="form__information--password-button password-confirmation-visibility" title="Botão para revelar a senhar"></button>
+          </div>
+        </div>
+        <div class="form__information--error form__information--error-password-confirmation">
+          <span class="form__information--error-text">Este campo não está válido</span>
+        </div>
+      </div>
+      <div class="form__informations-policies">
+        <input class="form__informations-policies--checkbox" type="checkbox" required/>
+        <p class="form__informations-policies--text">Aceito os termos de uso e concordo com as <a href="#" class="form__informations-policies--link">políticas de privacidade</a>.</p>
+      </div>
+    </section>
+    <button type="submit" class="form__button">Cadastrar</button>
+  </form>
+
+</body>
+
+</html>
